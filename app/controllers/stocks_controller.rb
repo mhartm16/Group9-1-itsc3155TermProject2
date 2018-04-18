@@ -8,13 +8,17 @@ class StocksController < ApplicationController
     end
     
     def new
+        @stock = Stock.new
     end
     
     def create
         @stock = Stock.new(stock_params)
         
-        @stock.save
-        redirect_to @stock
+        if @stock.save
+            redirect_to @stock
+        else 
+            render 'new'
+        end
     end
 end
 
