@@ -1,0 +1,14 @@
+<h1>Listing Saved Stocks</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+ 
+  <% @stocks.each do |stock| %>
+    <tr>
+      <td><%= stock.title %></td>
+      <td><%= link_to 'Show', stock_path(stock) %></td>
+    </tr>
+  <% end %>
+</table>
