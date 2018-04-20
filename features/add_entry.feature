@@ -11,3 +11,4 @@ Scenario: As an investor I want to be able to navigate from the homepage to the 
   When I click on the "New Stock" link
   Then I should be on the "Stocks" page
   And I should see the "Title" field
+  
