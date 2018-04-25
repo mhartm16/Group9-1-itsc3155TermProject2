@@ -14,7 +14,7 @@ class StocksController < ApplicationController
     def create
         @stock = Stock.new(stock_params)
         
-        if @stock.save
+        if @stock.save!
             redirect_to @stock
         else 
             render 'new'
