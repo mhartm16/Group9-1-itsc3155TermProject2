@@ -3,9 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 h1 {
     font-size: 32px;
-    color: blue;
+    color: black;
 }
 
 body {
     background: #D3D3D3;
+}
+
+div {
+    text-align: center;
+}
+
+#sign_in {
+    float: right;
+}
+
+input {
+    border-radius: 20px;
+}
+
+a {
+    border: lightslategray 1px solid;
+    padding: 1px;
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    background-color: gray;
 }
